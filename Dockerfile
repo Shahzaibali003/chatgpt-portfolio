@@ -1,9 +1,6 @@
 # Use the official Nginx image
 FROM nginx:alpine
 
-# Copy custom Nginx config to override default settings
-COPY nginx.conf /etc/nginx/nginx.conf
-
 # Copy website files to the Nginx web root
 COPY . /usr/share/nginx/html
 
